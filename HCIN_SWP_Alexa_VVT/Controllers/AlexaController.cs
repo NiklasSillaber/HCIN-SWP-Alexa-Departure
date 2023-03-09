@@ -1,6 +1,7 @@
 ﻿using Alexa.NET.Request;
 using Alexa.NET.Request.Type;
 using Alexa.NET.Response;
+using HCIN_SWP_Alexa_VVT.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -15,6 +16,9 @@ namespace HCIN_SWP_Alexa_VVT.Controllers
     [Route("[controller]")]
     public class AlexaController : Controller
     {
+
+        VVT_API vvt = new VVT_API();
+
         [HttpPost, Route("/vvt")]
         public async Task<SkillResponse> Alexa(SkillRequest input)
         {
@@ -46,8 +50,10 @@ namespace HCIN_SWP_Alexa_VVT.Controllers
                         {
                             case "vvt":
                                 string StationName = intentRequest.Intent.Slots["stationName"].Value;
-                                //CALL METHOD
-                                output.Response.OutputSpeech = new PlainTextOutputSpeech("Ich habe keine Ahnung");
+                                
+                                string response = vvt.GetDepartures(StationName);
+
+                                output.Response.OutputSpeech = new PlainTextOutputSpeech(response);
                                 output.Response.ShouldEndSession = true;
                                 break;
                             case "AMAZON.FallbackIntent":
