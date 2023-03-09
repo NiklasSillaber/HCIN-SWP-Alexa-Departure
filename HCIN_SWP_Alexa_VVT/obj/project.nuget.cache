@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "HVppPSUBu8nqZCEmwgLktrQD/gdbRyGmCiasfEZrgY08le19M+tieHfJXJUF5NArg6sj73sv0ihDheoLnc3oYg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Gaming-NB\\Documents\\GitHub\\vue_js_examples\\flask\\HCIN-SWP-Alexa-Departure\\HCIN_SWP_Alexa_VVT\\HCIN_SWP_Alexa_VVT.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Gaming-NB\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\Gaming-NB\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Gaming-NB\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+    "C:\\Users\\Gaming-NB\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+    "C:\\Users\\Gaming-NB\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+    "C:\\Users\\Gaming-NB\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
+  ],
+  "logs": []
+}
