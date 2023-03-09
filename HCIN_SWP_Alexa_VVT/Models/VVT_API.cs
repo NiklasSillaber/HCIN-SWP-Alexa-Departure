@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Net.Http;
 using System.Xml.Linq;
+using Microsoft.AspNetCore.Razor.TagHelpers;
 using Newtonsoft.Json.Linq;
 
 namespace HCIN_SWP_Alexa_VVT.Models
@@ -36,12 +37,49 @@ namespace HCIN_SWP_Alexa_VVT.Models
                             Longitude = (string)obj["stop"]["lon"]
                         }
                     );  
-
                 }
             }
-
             return stations;
+        }
 
+        public int GetUid(string StationName)
+        {
+            foreach (VVT_Station Station in Stations) {
+                if (StationName == Station.Name) {
+                    return Station.StationId;
+                }
+            }
+            return -1;
+        }
+
+        public List<Departure> GetInfos(int Uid)
+        {
+
+            HttpClient client = new HttpClient();
+            client.BaseAddress = new Uri("https://smartinfo.ivb.at");
+            var response = client.GetAsync("api/JSON/PASSAGE?stopID=" + Uid).Result;
+
+            List<Departure> departures = new List<Departure>();
+
+            if (response.IsSuccessStatusCode) {
+                var jsonString = response.Content.ReadAsStringAsync();
+                jsonString.Wait();
+
+                JArray array = JArray.Parse(jsonString.Result);
+                foreach (JObject obj in array.Children<JObject>()) {
+
+                    departures.Add(
+                        new Departure() {
+                            Route = (string)obj["smartinfo"]["route"],
+                            Direction = (string)obj["smartinfo"]["direction"],
+                            Time = (string)obj["smartinfo"]["time"]
+                        }
+                    );
+                }
+
+            }
+
+            return departures;
         }
     }
 }
