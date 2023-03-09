@@ -10,7 +10,21 @@ namespace HCIN_SWP_Alexa_VVT.Models
 {
     public class VVT_API
     {
-        List<VVT_Station> Stations;
+        public List<VVT_Station> Stations { get; set; }
+
+        public VVT_API() { 
+            this.Stations = GetAllStations();
+        }
+        public string GetDepartures(string station)
+        {
+            int uid = GetUid(station);
+            List<Departure> departures = GetInfos(uid);
+            string info = "";
+            foreach(Departure de in departures) {
+                info += "Route " + de.Route + " Richtung " + de.Direction + " Zeit " + de.Time + " ";
+            }
+            return info;
+        }
 
         //public List<VVT_Station> GetAllStations() {
         public List<VVT_Station> GetAllStations()
