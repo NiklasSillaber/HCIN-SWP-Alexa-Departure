@@ -1,16 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "A8ZiES4/76P/H3fPcX0Dt2s3N9nCZCRWLYNeT9GD2j5huFdbyrO4WPNTWkuQiopCF7VCQ3T1W6GFuM1HgBWeZQ==",
+  "dgSpecHash": "eWjC0A3JfTgXAkDpGmzUjih5S8fNZkiUQiG3MeXMTfLzmb90pk63COI0je/3788EhCi26+QhgFnpsAsENgXfVw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Gaming-NB\\Documents\\GitHub\\vue_js_examples\\flask\\HCIN-SWP-Alexa-Departure\\HCIN-SWP\\HCIN-SWP.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\Gaming-NB\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.1\\microsoft.aspnetcore.openapi.7.0.1.nupkg.sha512",
-    "C:\\Users\\Gaming-NB\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
-    "C:\\Users\\Gaming-NB\\.nuget\\packages\\microsoft.openapi\\1.4.3\\microsoft.openapi.1.4.3.nupkg.sha512",
-    "C:\\Users\\Gaming-NB\\.nuget\\packages\\swashbuckle.aspnetcore\\6.4.0\\swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
-    "C:\\Users\\Gaming-NB\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.4.0\\swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
-    "C:\\Users\\Gaming-NB\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.4.0\\swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
-    "C:\\Users\\Gaming-NB\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.4.0\\swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\danie\\Desktop\\HCIN_Projekt\\HCIN-SWP-Alexa-Departure\\HCIN-SWP\\HCIN-SWP.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }
