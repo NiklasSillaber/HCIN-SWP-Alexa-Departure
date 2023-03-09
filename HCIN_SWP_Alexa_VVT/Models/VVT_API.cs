@@ -43,14 +43,18 @@ namespace HCIN_SWP_Alexa_VVT.Models
                 JArray array = JArray.Parse(jsonString.Result);
                 foreach (JObject obj in array.Children<JObject>()) {
 
-                    stations.Add(
-                        new VVT_Station() {
-                            StationId = Int32.Parse((string)obj["stop"]["uid"]),
-                            Name = (string)obj["stop"]["name"],
-                            Latitude = (string)obj["stop"]["lat"],
-                            Longitude = (string)obj["stop"]["lon"]
-                        }
-                    );  
+                    if (obj["stop"] != null) {
+
+                        stations.Add(
+                            new VVT_Station() {
+                                StationId = Int32.Parse((string)obj["stop"]["uid"]),
+                                Name = (string)obj["stop"]["name"],
+                                Latitude = (string)obj["stop"]["lat"],
+                                Longitude = (string)obj["stop"]["lon"]
+                            }
+                        );
+
+                    }
                 }
             }
             return stations;
