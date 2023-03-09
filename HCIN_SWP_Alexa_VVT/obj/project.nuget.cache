@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "/VFI5IfezUgSs2AfMTli+8JN5cZSwgDLC4tYpIJdHzcDqnFgGkOcd8NRYPV7lWyX0868fD6/+1FG/I+3+3e6jQ==",
+  "dgSpecHash": "zoxOPugRinmd3DkrjHSNAJ8znPYb2qX0c7dV7o6woXkkhnVCMqWF1MqimQ6ie4BlEMM/CUvR+R4Vs2gOoMxw8w==",
   "success": true,
   "projectFilePath": "C:\\Users\\Gaming-NB\\Documents\\GitHub\\vue_js_examples\\flask\\HCIN-SWP-Alexa-Departure\\HCIN_SWP_Alexa_VVT\\HCIN_SWP_Alexa_VVT.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Gaming-NB\\.nuget\\packages\\alexa.net\\1.20.0\\alexa.net.1.20.0.nupkg.sha512",
     "C:\\Users\\Gaming-NB\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\Gaming-NB\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
-    "C:\\Users\\Gaming-NB\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\Gaming-NB\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",
     "C:\\Users\\Gaming-NB\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
     "C:\\Users\\Gaming-NB\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
     "C:\\Users\\Gaming-NB\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
